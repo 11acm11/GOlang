@@ -14,7 +14,7 @@ var conferencename = "Go Conference"
 var remainingtickets uint = 50
 var bookings = make([]userdata, 0)
 
-//Initializing Stucture to store variables for userdata
+//Initializing structure to store variables for user data
 type userdata struct {
 	firstname       string
 	lastname        string
@@ -63,7 +63,7 @@ func greetusers() {
 	fmt.Println("Get your tickets")
 }
 
-//Funtion to store firstnames of users
+//Function to store firstnames of users
 func getfirstname() []string {	
 	firstnames := []string{}
 	for _, booking := range bookings {
@@ -89,7 +89,7 @@ func getuserinput() (string, string, string, uint) {
 	return firstname, lastname, email, usertickets
 }
 
-//Function ot book tickets and storing user data in structure with a conformation message
+//Function to book tickets and storing user data in structure with a conformation message
 func booktickets(usertickets uint, firstname string, lastname string, email string) {
 	remainingtickets = remainingtickets - usertickets
 	var userdata = userdata{
