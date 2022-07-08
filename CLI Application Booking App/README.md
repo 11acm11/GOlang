@@ -1,0 +1,3 @@
+Project 1 : CLI Application - Booking App
+
+In this project I built a basic CLI Application that allows us to book tickets for a show and then later sends a message of ticket conformation using Goroutines. I utilized basic Go functions, Go concurrency and used packages fmt, strings, sync and time. Concurrency in Go is cheap and easy, unlike other programming languages that use threads Go utilizes built-in concurrency constructs: goroutines and channels.
