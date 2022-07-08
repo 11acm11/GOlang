@@ -1,0 +1,3 @@
+Project 2 : Web Scrapper -> Top 100 Anime Series of all time.
+
+In this project I have made a web scraper from the site link: https://www.imdb.com/list/ls058654847/  that contains the top 100 animes series of all time (note : This list was last updated on 4th December 2015). Here I have utilized Go’s gocolly framework ( http://go-colly.org/ ) which is used for tasks such as data mining, data processing or archiving. I followed certain parameters to extract for each anime namely : standing, name, year, genre and rating. I stored the following information in a slice of structures and then converted it into a csv file with the help of Go’s encoding framework. I have included the data.csv file here as well.
